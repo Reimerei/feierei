@@ -5,7 +5,7 @@
 
     <div class="container-fluid">
         <div class="site_header">
-            <span>Wir Heiraten!</span>
+            Wir Heiraten!
         </div>
     </div>
 
@@ -18,12 +18,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                @*<a class="navbar-brand" href="/">Hochzeit!</a>*@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="@("active".when(nav == "index"))"><a href="/">Einladung</a></li>
                     <li class="@("active".when(nav == "hinkommen"))"><a href="/hinkommen">Hinkommen</a></li>
                     <li class="@("active".when(nav == "ubernachten"))"><a href="/uebernachten">Übernachten</a></li>
+                    <li class="@("active".when(nav == "anmelden"))"><a href="/anmelden">Ich bin dabei!</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -32,5 +34,12 @@
     <div class="container-fluid">
 
     @content
+    </div>
+
+    <div class="container-fluid">
+        <div class="footer">
+            Proudly made with Bootstrap, Play! und MongoDB. By Reimerei. Text and design by Maliena.
+            <a href="https://github.com/Reimerei/feierei.git">Fork it on github.</a>
+        </div>
     </div>
 }
